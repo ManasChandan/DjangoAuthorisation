@@ -2,14 +2,18 @@ from django.shortcuts import render , HttpResponse
 
 # Create your views here.
 def index(request):
-    return render(request , "index.html")
+    context = {
+        "variable":"This is manas Chandan Behera"
+    }
+    return render(request , "index.html" , context)
+    # CDN - Content Delivery Network
     # return HttpResponse("This is my home page")
 
 def about(request):
-    return HttpResponse("this is the abut page")
+    return render(request , "about.html")
 
 def contact(request):
-    return HttpResponse("this is the contact page")
+    return render(request , "contact.html")
 
 def services(request):
-    return HttpResponse("These are services page")
+    return render(request , "services.html")

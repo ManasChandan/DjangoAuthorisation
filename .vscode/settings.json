@@ -2,10 +2,13 @@
     "python.pythonPath": "C:\\Users\\KIIT\\anaconda3\\envs\\project_django\\python.exe",
     "files.associations": {
         "**/*.html": "html",
+        "*html": "html",
         "**/templates/**/*.html": "django-html",
         "**/templates/**/*": "django-txt",
         "**/requirements{/**,*}.{txt,in}": "pip-requirements"
     },
     "emmet.includeLanguages": {"django-html": "html"},
+    "emmet.triggerExpansionOnTab": true,
+    "editor.mouseWheelZoom": true,
 
 }
